@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name — web developer / designer." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">Your Name</a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi — I’m <span class="accent">Your Name</span></h1>
+          <p class="intro">I build clean, accessible websites and web apps. I’m available for freelance work and open to new opportunities.</p>
+          <p>
+            <a class="btn" href="#projects">See my work</a>
+            <a class="btn btn-ghost" href="#contact">Contact me</a>
+          </p>
+        </div>
+        <div class="hero-media">
+          <img alt="Your Name" src="assets/profile.jpg" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>Short bio — 1–2 sentences describing what you do, tools you use, and what problems you like to solve.</p>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <div class="grid projects-grid">
+        <article class="card">
+          <img src="assets/project1.png" alt="Project 1 preview" onerror="this.style.display='none'">
+          <div class="card-body">
+            <h3>Project Title</h3>
+            <p>One-sentence summary. Tech used: HTML, CSS, JS.</p>
+            <p class="card-actions">
+              <a href="#" target="_blank" rel="noopener">Live</a>
+              <a href="#" target="_blank" rel="noopener">Code</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- Duplicate card blocks for more projects -->
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript / ES6+</li>
+        <li>React / Next.js</li>
+        <li>Responsive design</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>If you want to work together, email me at <a href="mailto:you@yourdomain.com">you@yourdomain.com</a> or connect on <a href="#" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — Built with ❤️ & GitHub Pages</p>
+    </div>
+  </footer>
+
+<script>
+  // small scripts: nav toggle and set year
+  document.getElementById('year').textContent = new Date().getFullYear().toString();
+  const nav = document.getElementById('nav');
+  const toggle = document.getElementById('nav-toggle');
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+</script>
+</body>
+</html>
