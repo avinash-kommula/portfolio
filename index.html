@@ -3,95 +3,156 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Avinash Kommula Portfolio</title>
-  <meta name="description" content="Portfolio of Your Name — web developer / designer." />
+  <title>Avinash Kommula — ETL Developer & Data Analyst</title>
+  <meta name="description" content="Avinash Kommula — ETL Developer with expertise in ADF, SSIS, Azure Synapse, Snowflake, SQL and BI (Power BI, Tableau)." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="container header-inner">
-      <a class="brand" href="/">Your Name</a>
-      <nav class="nav" id="nav">
+      <a class="brand" href="#top">Avinash Kommula</a>
+      <nav class="nav" id="nav" aria-label="Primary">
         <a href="#about">About</a>
+        <a href="#work">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle menu">☰</button>
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <h1>Hi — I’m <span class="accent">Avinash Kommula</span></h1>
-          <p class="intro">I build clean, accessible websites and web apps. I’m available for freelance work and open to new opportunities.</p>
-          <p>
-            <a class="btn" href="#projects">See my work</a>
-            <a class="btn btn-ghost" href="#contact">Contact me</a>
+          <h1>Avinash Kommula</h1>
+          <p class="muted-lead">ETL Developer & Data Analyst — Azure / AWS / SQL / Data Warehousing</p>
+          <p class="intro">I design and optimize enterprise-scale ETL pipelines, data warehouses, and reporting solutions for healthcare, insurance, finance, HR, and energy. I specialize in ADF, SSIS, Azure Synapse, Snowflake, and performance tuning.</p>
+
+          <p class="contact-row">
+            <a class="btn" href="mailto:avinash.kommula98@gmail.com">Email</a>
+            <a class="btn btn-ghost" href="assets/AvinashKommulaResume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
           </p>
+
+          <ul class="contact-meta">
+            <li><strong>Email:</strong> <a href="mailto:avinash.kommula98@gmail.com">avinash.kommula98@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+13612540433">361-254-0433</a></li>
+            <li><strong>Location:</strong> Austin, TX (Open to relocate)</li>
+          </ul>
         </div>
-        <div class="hero-media">
-          <img alt="Your Name" src="assets/profile.jpg" onerror="this.style.display='none'">
-        </div>
+
+        <aside class="hero-media" aria-hidden="true">
+          <img src="assets/profile.jpg" alt="Avinash Kommula — profile photo" onerror="this.style.display='none'">
+        </aside>
       </div>
     </section>
 
     <section id="about" class="section container">
-      <h2>About</h2>
-      <p>Short bio — 1–2 sentences describing what you do, tools you use, and what problems you like to solve.</p>
+      <h2>Professional Summary</h2>
+      <p>4 years of progressive experience in ETL Development, Data Integration, and Business Intelligence, with expertise in designing, building, and optimizing enterprise-scale data pipelines across healthcare, insurance, finance, HR, and energy domains. Specialized in ETL orchestration, performance tuning, and data warehouse modeling using SQL Server, SSIS, Azure Data Factory (ADF), Azure Synapse, AWS Data Lake, and Control-M. Experienced in compliance-driven environments (HIPAA, SOX) and strong governance practices.</p>
+    </section>
+
+    <section id="work" class="section container">
+      <h2>Work Experience</h2>
+
+      <article class="exp">
+        <h3>Yuvi Systems — Data Analyst</h3>
+        <p class="exp-meta">July 2024 – Present</p>
+        <ul>
+          <li>Designed and implemented enterprise-grade ETL workflows using Azure Data Factory (ADF) to ingest structured/unstructured data from on-premises (SFTP, MariaDB, SQL Server) into Snowflake, reducing manual intervention by 40%.</li>
+          <li>Optimized SQL stored procedures and redesigned joins, improving execution speed by 30% across MariaDB and SQL Server pipelines.</li>
+          <li>Configured event-based triggers in ADF to automate Snowflake ingestion workflows for hospital and insurance data streams.</li>
+          <li>Monitored and supported 40+ Azure ingestion jobs, reducing pipeline failures by 25% via proactive alerting and recovery mechanisms.</li>
+          <li>Built incremental load processes with ADF and SQL CDC to optimize refreshes on 100M+ record tables.</li>
+          <li>Developed data validation and cleansing scripts in Python and SQL, reducing data errors by 95% before downstream BI consumption.</li>
+        </ul>
+      </article>
+
+      <article class="exp">
+        <h3>Accenture — App Development Analyst</h3>
+        <p class="exp-meta">Jan 2020 – Aug 2022</p>
+        <ul>
+          <li>Built and maintained 50+ monthly ETL jobs using SSIS and Control-M, ensuring timely delivery of HR, finance, and operational datasets.</li>
+          <li>Designed segmented ETL pipelines with CDC and SCD for accurate incremental and historical data loading.</li>
+          <li>Migrated legacy SSRS-based ETL dependencies into modern workflows feeding Power BI/Tableau, cutting report preparation time by 40%.</li>
+          <li>Created data quality validation steps and error handling frameworks in SSIS, improving ETL robustness.</li>
+          <li>Mentored junior analysts in ETL best practices and SQL performance tuning, reducing debugging cycles by 30%.</li>
+        </ul>
+      </article>
     </section>
 
     <section id="projects" class="section container">
       <h2>Projects</h2>
-      <div class="grid projects-grid">
-        <article class="card">
-          <img src="assets/project1.png" alt="Project 1 preview" onerror="this.style.display='none'">
+
+      <div class="projects-grid">
+        <article class="card small">
           <div class="card-body">
-            <h3>Project Title</h3>
-            <p>One-sentence summary. Tech used: HTML, CSS, JS.</p>
-            <p class="card-actions">
-              <a href="#" target="_blank" rel="noopener">Live</a>
-              <a href="#" target="_blank" rel="noopener">Code</a>
-            </p>
+            <h3>Investment Insights & Portfolio Tracking (Power BI)</h3>
+            <p>Designed an interactive financial analytics dashboard in Power BI with data modeling, DAX measures, and dynamic visualizations to showcase stock market trends, portfolio performance, and mutual fund insights.</p>
           </div>
         </article>
 
-        <!-- Duplicate card blocks for more projects -->
+        <article class="card small">
+          <div class="card-body">
+            <h3>Cancer Incidence & Mortality Dashboard (Tableau)</h3>
+            <p>Interactive dashboard visualizing cancer cases and death rates by type, region, age, and gender, highlighting trends and disparities to support public health decision-making.</p>
+          </div>
+        </article>
       </div>
     </section>
 
     <section id="skills" class="section container">
-      <h2>Skills</h2>
-      <ul class="skills">
-        <li>HTML &amp; CSS</li>
-        <li>JavaScript / ES6+</li>
-        <li>React / Next.js</li>
-        <li>Responsive design</li>
+      <h2>Technical Skills</h2>
+      <ul class="skills skills-grid">
+        <li>ADF (Azure Data Factory)</li>
+        <li>SSIS, Control-M</li>
+        <li>Azure Synapse, Data Lake</li>
+        <li>Snowflake, AWS Glue</li>
+        <li>SQL Server, Oracle, PostgreSQL, MySQL</li>
+        <li>SQL / T-SQL / PL/SQL</li>
+        <li>Python, Shell Scripting</li>
+        <li>Power BI, Tableau, SSRS</li>
+        <li>Git, Azure DevOps</li>
+        <li>Data Modeling (Star/Snowflake), CDC, SCD</li>
       </ul>
+    </section>
+
+    <section id="education" class="section container">
+      <h2>Education & Certifications</h2>
+      <p><strong>Master of Science in Computer Science</strong> — Texas A&amp;M University, May 2024</p>
+      <p><strong>Certifications:</strong> Microsoft Certified: Azure Fundamentals (AZ-900); AWS Cloud Practitioner; Meta Certified: JavaScript Developer</p>
     </section>
 
     <section id="contact" class="section container">
       <h2>Contact</h2>
-      <p>If you want to work together, email me at <a href="mailto:you@yourdomain.com">you@yourdomain.com</a> or connect on <a href="#" target="_blank" rel="noopener">LinkedIn</a>.</p>
+      <p>If you'd like to collaborate or request my full resume and references, email me at <a href="mailto:avinash.kommula98@gmail.com">avinash.kommula98@gmail.com</a> or call <a href="tel:+13612540433">361-254-0433</a>.</p>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <p>© <span id="year"></span> Your Name — Built with ❤️ & GitHub Pages</p>
+      <p>© <span id="year"></span> Avinash Kommula — Built with GitHub Pages</p>
     </div>
   </footer>
 
-<script>
-  // small scripts: nav toggle and set year
-  document.getElementById('year').textContent = new Date().getFullYear().toString();
-  const nav = document.getElementById('nav');
-  const toggle = document.getElementById('nav-toggle');
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
-</script>
+  <script>
+    // set current year (type-safe)
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear().toString();
+    }
+
+    // mobile nav toggle
+    const nav = document.getElementById('nav');
+    const toggle = document.getElementById('nav-toggle');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(open));
+      });
+    }
+  </script>
 </body>
 </html>
